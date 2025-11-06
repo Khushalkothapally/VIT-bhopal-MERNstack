@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <style>
+        .styled-table,
+        .styled-table th,
+        .styled-table td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        .styled-table th:nth-child(1),
+        .styled-table th:nth-child(2),
+        .styled-table td:nth-child(1),
+        .styled-table td:nth-child(2) {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="styled-table">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+</body>
+</html>
