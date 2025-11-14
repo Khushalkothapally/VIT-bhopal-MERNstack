@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Version A</title>
+
+<style>
+    body {
+        background-color: #2d004d;
+        color: #c2ffe9;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    form {
+        background-color: #3c0066;
+        padding: 25px;
+        border-radius: 10px;
+        width: 420px;
+        color: #f2e7ff;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        margin: 8px 0 16px 0;
+        padding: 10px;
+        background-color: #24003b;
+        color: #d4faff;
+        border: 1px solid #7a00ff;
+        border-radius: 6px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        border: 2px solid #9d4dff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    legend {
+        padding: 5px 10px;
+        background-color: #9d4dff;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #9d4dff;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #7d35cc;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>HTML Forms – Version A</h2>
+
+<form action="/action_page.py" method="get" target="_blank">
+
+    <label>First name:</label>
+    <input type="text" name="fname" placeholder="Enter first name">
+
+    <label>Last name:</label>
+    <input type="text" name="lname" placeholder="Enter last name">
+
+    <label>Adhaar No:</label>
+    <input type="text" name="adhaar" size="12">
+
+    <label>PIN:</label>
+    <input type="text" name="pin" maxlength="4" size="4">
+
+    <p>Fuel Type:</p>
+    <input type="checkbox" id="d" name="diesel">
+    <label for="d">Diesel</label><br>
+
+    <input type="checkbox" id="p" name="petrol">
+    <label for="p">Petrol</label>
+
+    <br><br>
+    <label>Select Car:</label>
+    <select name="cars">
+        <option>Volvo</option>
+        <option>Saab</option>
+        <option>Fiat</option>
+        <option>Audi</option>
+    </select>
+
+    <label>Select Car (list view):</label>
+    <select name="cars2" size="3">
+        <option>Volvo</option>
+        <option>Saab</option>
+        <option>Fiat</option>
+        <option>Audi</option>
+    </select>
+
+    <p>Known Languages:</p>
+    <input type="radio" id="ht" name="lang" value="HTML">
+    <label for="ht">HTML</label><br>
+
+    <input type="radio" id="cs" name="lang" value="CSS">
+    <label for="cs">CSS</label><br>
+
+    <input type="radio" id="js" name="lang" value="JavaScript">
+    <label for="js">JavaScript</label>
+
+    <br><br>
+    <label>Remarks:</label>
+    <textarea name="message" rows="2" cols="30">The cat was playing in the garden.</textarea>
+
+    <fieldset>
+        <legend>Person Details</legend>
+        <label>First name:</label>
+        <input type="text" value="John">
+
+        <label>Last name:</label>
+        <input type="text" value="Doe">
+    </fieldset>
+
+    <label>Choose Browser:</label>
+    <input list="browsers" name="browser" placeholder="Select browser">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+</form>
+
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="a" value="50"> +
+    <input type="number" id="b" name="b" value="50"> =
+    <output name="x"></output>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

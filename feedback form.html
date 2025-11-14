@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Feedback – Version B</title>
+
+<style>
+    body {
+        background-color: #f7f2e7;
+        margin: 0;
+        padding: 50px 20px;
+        font-family: Georgia, serif;
+        color: #2f3e46;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 35px;
+        color: #315b4c;
+    }
+
+    .block {
+        max-width: 540px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 45px;
+        border-radius: 15px;
+        border: 2px solid #cce7df;
+    }
+
+    .item {
+        margin-bottom: 22px;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #9db5a4;
+        background-color: #eef5f1;
+        font-size: 15px;
+        color: #2f3e46;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #52796f;
+        outline: none;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        padding: 14px;
+        background-color: #315b4c;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #234236;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Employee Feedback Form</h1>
+
+<div class="block">
+
+<form>
+
+    <div class="item">
+        <label>Name</label>
+        <input type="text" value="jayanth" required>
+    </div>
+
+    <div class="item">
+        <label>Email</label>
+        <input type="email" value="jayanth@faceprep.in" required>
+    </div>
+
+    <div class="item">
+        <label>Department</label>
+        <select required>
+            <option>Select Department</option>
+            <option selected>Training</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+        </select>
+    </div>
+
+    <div class="item">
+        <label>Role/Position</label>
+        <input type="text" value="Training Manager" required>
+    </div>
+
+    <div class="item">
+        <label>Overall Experience</label>
+        <select required>
+            <option>Select Rating</option>
+            <option selected>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+    </div>
+
+    <div class="item">
+        <label>Feedback</label>
+        <textarea required>He is a certified trainer in aws/ms azure.</textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</div>
+</body>
+</html>

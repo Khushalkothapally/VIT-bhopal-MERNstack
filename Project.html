@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Design A</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #e3f2fd;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 110px auto;
+      gap: 8px;
+      padding: 8px;
+      font-family: Arial, sans-serif;
+    }
+
+    .top {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .top div {
+      background-color: #90caf9;
+      border-radius: 6px;
+    }
+
+    .left {
+      background-color: #bbdefb;
+      position: relative;
+      border-radius: 6px;
+    }
+
+    .inner-box {
+      width: 85px;
+      height: 85px;
+      background-color: #42a5f5;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      border-radius: 6px;
+    }
+
+    .right {
+      display: grid;
+      gap: 8px;
+    }
+
+    .right div {
+      background-color: #e1f5fe;
+      border-radius: 6px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="top">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="left">
+    <div class="inner-box"></div>
+  </div>
+
+  <div class="right">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+</body>
+</html>
